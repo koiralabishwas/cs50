@@ -1,8 +1,10 @@
-# Ignore files that don't have any dot (no extension), recursively
+# Ignore files with no dot in the name (i.e., no extension), in all dirs
 **/[!.]*
 
-# Don't ignore dotfiles (optional)
-!**/.*
-# But keep .c and .sh files
+# But DO NOT ignore directories — Git needs them to reach the files
+!*/
+
+# Allow source files (un-ignore)
 !**/*.c
+!**/*.h
 !**/*.sh
