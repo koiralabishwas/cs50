@@ -1,10 +1,1 @@
-# Ignore any file in any folder that:
-# - does not contain a dot (no extension)
-# - is not tracked
-# - and is not a directory
-
-# Match files with no extension
-**/[^.]*
-
-# But keep folders
-!*/
+*.out
