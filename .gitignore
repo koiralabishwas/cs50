@@ -1,5 +1,4 @@
-/[a-zA-Z0-9]*
-
-# # But keep source files
-# !*.c
-# !*.h
+# Ignore files without a dot anywhere in all directories
+**/[a-zA-Z0-9]*
+!**/*.c
+!**/*.sh
