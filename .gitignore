@@ -1,4 +1,8 @@
-# Ignore files without a dot anywhere in all directories
-**/[a-zA-Z0-9]*
+# Ignore files that don't have any dot (no extension), recursively
+**/[!.]*
+
+# Don't ignore dotfiles (optional)
+!**/.*
+# But keep .c and .sh files
 !**/*.c
 !**/*.sh
